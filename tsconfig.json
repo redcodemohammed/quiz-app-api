@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "paths": {
+      "@users-app/*": [
+        "users-app/*"
+      ],
+      "@quizzes-app/*": [
+        "quizzes-app/*"
+      ],
+      "@answers-app/*": [
+        "answers-app/*"
+      ],
+      "@middlewares/*": [
+        "middlewares/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "@types/**/*.d.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "@types/express/index.d.ts"
+  ]
+}
